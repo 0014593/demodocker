@@ -2,8 +2,10 @@ from flask import Flask
 from redis import Redis, RedisError
 import socket
 
+
 app = Flask(__name__)
 redis = Redis(host="redis")
+
 
 @app.route("/")
 def hello():
