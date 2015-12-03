@@ -16,7 +16,6 @@ def hello():
 
     html = "<h3>Hello World!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>" \
-           "<b>Visits:</b> {visits}" \
            "<br/>"
 
     return html.format(hostname=socket.gethostname(), visits=visits)
